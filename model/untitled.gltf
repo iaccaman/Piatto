@@ -4,29 +4,22 @@
         "version" : "2.0"
     },
     "extensionsUsed" : [
-        "KHR_draco_mesh_compression"
-    ],
-    "extensionsRequired" : [
-        "KHR_draco_mesh_compression"
+        "KHR_materials_specular",
+        "KHR_materials_ior"
     ],
     "scene" : 0,
     "scenes" : [
         {
             "name" : "Scene",
             "nodes" : [
-                0,
-                1
+                0
             ]
         }
     ],
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "Mesh_0"
-        },
-        {
-            "mesh" : 1,
-            "name" : "Mesh_0.002",
+            "name" : "model-2022-11-29-18-38-04_mesh_tex",
             "rotation" : [
                 0.7071068286895752,
                 0,
@@ -35,9 +28,33 @@
             ]
         }
     ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "extensions" : {
+                "KHR_materials_specular" : {
+                    "specularColorFactor" : [
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "KHR_materials_ior" : {
+                    "ior" : 1.4500000476837158
+                }
+            },
+            "name" : "material_0",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0
+            }
+        }
+    ],
     "meshes" : [
         {
-            "name" : "Mesh_0",
+            "name" : "model-2022-11-29-18-38-04_mesh_tex",
             "primitives" : [
                 {
                     "attributes" : {
@@ -45,103 +62,56 @@
                         "NORMAL" : 1,
                         "TEXCOORD_0" : 2
                     },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 0,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
                     "indices" : 3,
-                    "mode" : 4
-                }
-            ]
-        },
-        {
-            "name" : "Mesh_0.002",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 4,
-                        "NORMAL" : 5,
-                        "TEXCOORD_0" : 6
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 1,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 7,
-                    "mode" : 4
+                    "material" : 0
                 }
             ]
         }
     ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "model-2022-11-29-18-38-04_mesh_tex",
+            "uri" : "model-2022-11-29-18-38-04_mesh_tex.jpg"
+        }
+    ],
     "accessors" : [
         {
-            "componentType" : 5126,
-            "count" : 161298,
-            "max" : [
-                87.27050018310547,
-                60.75135803222656,
-                -223.37806701660156
-            ],
-            "min" : [
-                29.006298065185547,
-                -43.22763442993164,
-                -310.95611572265625
-            ],
-            "type" : "VEC3"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 161298,
-            "type" : "VEC3"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 161298,
-            "type" : "VEC2"
-        },
-        {
-            "componentType" : 5125,
-            "count" : 161298,
-            "type" : "SCALAR"
-        },
-        {
+            "bufferView" : 0,
             "componentType" : 5126,
             "count" : 806502,
             "max" : [
-                87.506103515625,
+                87.5093994140625,
                 -223.3070068359375,
-                43.37260055541992
+                43.37404251098633
             ],
             "min" : [
-                28.936800003051758,
-                -310.9739990234375,
+                28.92340087890625,
+                -311.03900146484375,
                 -61.095699310302734
             ],
             "type" : "VEC3"
         },
         {
+            "bufferView" : 1,
             "componentType" : 5126,
             "count" : 806502,
             "type" : "VEC3"
         },
         {
+            "bufferView" : 2,
             "componentType" : 5126,
             "count" : 806502,
             "type" : "VEC2"
         },
         {
+            "bufferView" : 3,
             "componentType" : 5125,
             "count" : 806502,
             "type" : "SCALAR"
@@ -150,18 +120,38 @@
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 991110,
-            "byteOffset" : 0
+            "byteLength" : 9678024,
+            "byteOffset" : 0,
+            "target" : 34962
         },
         {
             "buffer" : 0,
-            "byteLength" : 4738474,
-            "byteOffset" : 991112
+            "byteLength" : 9678024,
+            "byteOffset" : 9678024,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6452016,
+            "byteOffset" : 19356048,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3226008,
+            "byteOffset" : 25808064,
+            "target" : 34963
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 5729588,
+            "byteLength" : 29034072,
             "uri" : "untitled.bin"
         }
     ]
